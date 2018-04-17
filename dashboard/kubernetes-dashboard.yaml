@@ -114,7 +114,7 @@ spec:
     spec:
       containers:
       - name: kubernetes-dashboard
-        image: registry.cn-hangzhou.aliyuncs.com/yanfulei/gcr.io_google_containers_kubernetes-dashboard-amd64:v1.8.3 
+        image: registry.cn-hangzhou.aliyuncs.com/yanfulei/gcr.io_google_containers_kubernetes-dashboard-amd64:v1.8.3
         ports:
         - containerPort: 8443
           protocol: TCP
@@ -123,7 +123,7 @@ spec:
           # Uncomment the following line to manually specify Kubernetes API server Host
           # If not specified, Dashboard will attempt to auto discover the API server and connect
           # to it. Uncomment only if the default does not work.
-          - --apiserver-host=http://192.168.0.132:8880
+          - --apiserver-host=http://172.18.174.178:8880
         volumeMounts:
         - name: kubernetes-dashboard-certs
           mountPath: /certs
