@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: jenkins-dev-volume
+  name: jenkins
   labels:
     name: jenkins
 spec:
@@ -10,7 +10,8 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
+  persistentVolumeReclaimPolicy: Retain
   glusterfs:
-    endpoints: "glusterfs-cluster"
-    path: "gv5" # Need create it by glusterfs first.
+    endpoints: glusterfs-cluster
+    path: "gv5"
     readOnly: false

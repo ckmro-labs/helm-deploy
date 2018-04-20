@@ -12,3 +12,10 @@ spec:
         backend:
           serviceName: nginx
           servicePort: http
+  - host: jenkins.k8s
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: jenkins-svc
+          servicePort: 8080
