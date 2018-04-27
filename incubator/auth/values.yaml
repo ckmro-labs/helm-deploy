@@ -2,13 +2,13 @@ namespace: dev
 replicaCount: 1
 image:
   repository: 192.168.0.132:1443/incubator/auth:latest
-  tag: incubator
   pullPolicy: Always
 service:
   enabled: true
-  name: incubator-ckmro-auth
+  name: incubator-auth
   type: ClusterIP
   containerPort: 9998
+  routeHost: dev.auth.ckmro.com
 resources:
 #  limits:
 #    cpu: 100m

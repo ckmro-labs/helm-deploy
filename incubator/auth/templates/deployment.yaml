@@ -1,9 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: "{{ .Chart.Name }}"
+  name: "{{ .Chart.Name }}-incubator"
   namespace: {{ .Values.namespace }}
   labels:
+    k8s-app: {{ .Chart.Name }}-incubator
     app: {{ .Chart.Name }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
     release: {{ .Release.Name }}
@@ -14,12 +15,13 @@ spec:
       labels:
         app: {{ template "appname" . }}
         release: {{ .Release.Name }}
+        k8s-app: {{ .Chart.Name }}-incubator
     spec:
       imagePullSecrets:
 {{ toYaml .Values.image.secrets | indent 10 }}
       containers:
       - name: {{ .Chart.Name }}
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - name: "{{ .Values.service.name }}"
