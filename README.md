@@ -9,4 +9,4 @@
 ## How Use?
 
 * helm repo add ckmro_stable https://ckmro-labs.github.io/helm-deploy/ckmro/stable
-* helm repo add ckmro_incubator https://ckmro-labs.github.io/helm-deploy/ckmro/incubator
+* helm repo add ckmro_develop https://ckmro-labs.github.io/helm-deploy/ckmro/develop

@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  auth:
+  - apiVersion: v1
+    created: 2018-05-02T08:49:46.572205+08:00
+    description: Auth Microservice Application Helm Chart
+    digest: baa3140352f672ea13eba60bf5b4946f0b28dfc32c9037262cacfaaa31b8ca14
+    name: auth
+    urls:
+    - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/auth-2.0.0.tgz
+    version: 2.0.0
+generated: 2018-05-02T08:49:46.571769+08:00

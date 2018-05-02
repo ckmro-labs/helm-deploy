@@ -14,17 +14,17 @@ function gen_stable_packages() {
 }
 
 function gen_incubator_packages() {
-  for d in incubator/*
+  for d in develop/*
   do
       echo $d
       helm package $d
-      mv *.tgz ckmro/incubator
+      mv *.tgz ckmro/develop
   done
 }
 
 function index() {
   helm repo index --url ${REPO_PATH}/ckmro/stable ./ckmro/stable
-  helm repo index --url ${REPO_PATH}/ckmro/incubator ./ckmro/incubator
+  helm repo index --url ${REPO_PATH}/ckmro/develop ./ckmro/develop
 }
 
 # generate helm chart packages
