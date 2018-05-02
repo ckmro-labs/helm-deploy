@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Member Microservice Application Helm Chart
+name: member
+version: 2.0.0
