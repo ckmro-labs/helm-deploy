@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "traefik-{{ .Chart.Name }}-route"
+  namespace: {{ .Values.namespace }}
+spec:
+  rules:
+  - host: {{ .Values.service.routeHost }}
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: "{{ .Chart.Name }}-incubator-svc"
+          servicePort: 80

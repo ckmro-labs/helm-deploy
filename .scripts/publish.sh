@@ -28,8 +28,9 @@ function index() {
 }
 
 # generate helm chart packages
-# gen_stable_packages
+
 gen_incubator_packages
+gen_stable_packages
 
 # create index
 index
