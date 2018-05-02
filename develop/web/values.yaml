@@ -1,0 +1,19 @@
+namespace: dev
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/incubator/web:latest
+  pullPolicy: Always
+service:
+  enabled: true
+  name: web-dev
+  type: ClusterIP
+  containerPort: 80
+  routeHost: dev.www.ckmro.com
+configMap:
+resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi
