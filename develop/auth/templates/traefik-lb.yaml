@@ -10,5 +10,5 @@ spec:
       paths:
       - path:
         backend:
-          serviceName: "{{ .Chart.Name }}-incubator-svc"
+          serviceName: "{{ .Chart.Name }}"
           servicePort: 80

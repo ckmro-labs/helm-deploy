@@ -5,7 +5,7 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: auth-dev
+  name: auth
   type: ClusterIP
   containerPort: 9998
   routeHost: dev.auth.ckmro.com
