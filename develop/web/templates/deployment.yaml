@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: "{{ .Chart.Name }}-incubator"
+  name: "{{ .Chart.Name }}"
   namespace: {{ .Values.namespace }}
   labels:
-    k8s-app: {{ .Chart.Name }}-incubator
+    k8s-app: {{ .Chart.Name }}
     app: {{ .Chart.Name }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
     release: {{ .Release.Name }}
@@ -15,7 +15,7 @@ spec:
       labels:
         app: {{ template "appname" . }}
         release: {{ .Release.Name }}
-        k8s-app: {{ .Chart.Name }}-incubator
+        k8s-app: {{ .Chart.Name }}
     spec:
       imagePullSecrets:
 {{ toYaml .Values.image.secrets | indent 10 }}
