@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: traefik-rabbitmq-route
+spec:
+  rules:
+  - host: rabbitmq.ui.ckmro.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: rabbitmq
+          servicePort: 15672

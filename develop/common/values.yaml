@@ -5,9 +5,9 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: common-dev
+  name: common
   type: ClusterIP
-  containerPort: 8080
+  containerPort: 7101
   routeHost: dev.common.ckmro.com
 configMap:
 resources:
