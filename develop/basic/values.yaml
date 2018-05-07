@@ -5,9 +5,9 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: basic-dev
+  name: basic
   type: ClusterIP
-  containerPort: 8080
+  containerPort: 6901
   routeHost: dev.basic.ckmro.com
 configMap:
 resources:
