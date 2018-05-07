@@ -5,10 +5,10 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: common
+  name: commons
   type: ClusterIP
   containerPort: 7101
-  routeHost: dev.common.ckmro.com
+  routeHost: dev.commons.ckmro.com
 configMap:
 resources:
 #  limits:
