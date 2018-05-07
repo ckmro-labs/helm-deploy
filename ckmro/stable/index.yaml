@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   auth:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.562798+08:00
+    created: 2018-05-07T14:44:37.490522+08:00
     description: Auth Microservice Application Helm Chart
     digest: 48b25cecfc62e3a0b78eb48793529e6b477736ada68b5e55fc65a268020aab80
     name: auth
@@ -11,7 +11,7 @@ entries:
     version: 2.0.0
   basic:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.562979+08:00
+    created: 2018-05-07T14:44:37.4907+08:00
     description: Basic Microservice Application Helm Chart
     digest: 65d8ae80a0159c9b1424bdbd7eecaf6ccd592ee49ab03ce541e12eb26669f96b
     name: basic
@@ -20,7 +20,7 @@ entries:
     version: 2.0.0
   common:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.563198+08:00
+    created: 2018-05-07T14:44:37.490892+08:00
     description: Common Microservice Application Helm Chart
     digest: 7a4ec900fea10b912759436a621e816b79ad02d632b500aea89a881ed0ce2fb4
     name: common
@@ -29,7 +29,7 @@ entries:
     version: 2.0.0
   gateway:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.563451+08:00
+    created: 2018-05-07T14:44:37.491099+08:00
     description: Gateway Microservice Application Helm Chart
     digest: 3e4e7b9174fda536559fb8609b427798498617f29f1facf72e62587bf37d77f1
     name: gateway
@@ -38,7 +38,7 @@ entries:
     version: 2.0.0
   inquiry:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.563719+08:00
+    created: 2018-05-07T14:44:37.491288+08:00
     description: Inquiry Microservice Application Helm Chart
     digest: 0b30addfe9df998ae421313486e798ce8610c328b205bb9d450b128d70d8cad1
     name: inquiry
@@ -47,7 +47,7 @@ entries:
     version: 2.0.0
   member:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.563925+08:00
+    created: 2018-05-07T14:44:37.49159+08:00
     description: Member Microservice Application Helm Chart
     digest: eab6d1f7d477a210b58579c46731563936f2191d3a0c5379be6131b34bfdf9e0
     name: member
@@ -56,11 +56,11 @@ entries:
     version: 2.0.0
   web:
   - apiVersion: v1
-    created: 2018-05-07T11:23:39.56412+08:00
+    created: 2018-05-07T14:44:37.491918+08:00
     description: Website Microservice Application Helm Chart
     digest: 33334b72a0370c0c62146fa399829020061f1f5ca21838cd1d11b877c6607b4e
     name: web
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/web-2.0.0.tgz
     version: 2.0.0
-generated: 2018-05-07T11:23:39.562425+08:00
+generated: 2018-05-07T14:44:37.490129+08:00
