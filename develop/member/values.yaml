@@ -5,9 +5,9 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: member-dev
+  name: member
   type: ClusterIP
-  containerPort: 9998
+  containerPort: 6601
   routeHost: dev.member.ckmro.com
 configMap:
 resources:
