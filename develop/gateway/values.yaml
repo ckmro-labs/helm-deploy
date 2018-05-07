@@ -5,9 +5,9 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: gateway-dev
+  name: gateway
   type: ClusterIP
-  containerPort: 9998
+  containerPort: 7701
   routeHost: dev.gateway.ckmro.com
 configMap:
 resources:
