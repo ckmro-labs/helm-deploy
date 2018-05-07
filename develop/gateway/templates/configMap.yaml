@@ -5,4 +5,38 @@ metadata:
   namespace: {{ .Values.namespace }}
 data:
   application.properties: |
-    {{ toYaml .Values.configMap}}
+    server.port={{ .Values.service.containerPort | default "7701" }}
+    spring.data.mongodb.uri=mongodb://192.168.0.131:27017,192.168.0.130:27017/mro?replicaSet=mro_replset&maxPoolSize=200
+    spring.redis.host=192.168.0.130
+    spring.redis.port=6379
+    spring.redis.password=
+    spring.redis.pool.max-idle=8
+    spring.redis.pool.min-idle=0
+    spring.redis.pool.max-active=8
+    spring.redis.pool.max-wait=-1
+    dubbo.zk.address=192.168.0.130:2181,192.168.0.131:2181
+    dubbo.netty.port=20889
+    spring.data.elasticsearch.cluster-name=elasticsearch
+    spring.data.elasticsearch.cluster-nodes= 192.168.0.130:9300,192.168.0.131:9300
+    spring.data.elasticsearch.repositories.enabled=true
+    security.oauth2.resource.userInfoUri: http://auth/user
+    spring.activemq.broker-url=tcp://192.168.0.131:61616
+    spring.activemq.user=
+    spring.activemq.password=
+    spring.activemq.in-memory=true
+    spring.activemq.pooled=false
+    spring.jackson.default-property-inclusion=non-null
+    kafka.broker.address=192.168.0.130:9092,192.168.0.131:9092
+    kafka.consumer.group=to-notification
+    spring.http.multipart.maxFileSize=10Mb
+    spring.http.multipart.maxRequestSize=100Mb
+    spring.freemarker.template-loader-path=classpath:/templates
+    spring.freemarker.cache=false
+    spring.freemarker.charset=UTF-8
+    spring.freemarker.check-template-location=true
+    spring.freemarker.content-type=text/html
+    spring.freemarker.expose-request-attributes=true
+    spring.freemarker.expose-session-attributes=true
+    spring.freemarker.request-context-attribute=request
+    spring.freemarker.suffix=.ftl
+    server.ip = 117.25.55.27
