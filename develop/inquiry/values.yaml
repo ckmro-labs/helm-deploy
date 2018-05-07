@@ -5,9 +5,9 @@ image:
   pullPolicy: Always
 service:
   enabled: true
-  name: inquiry-dev
+  name: inquiry
   type: ClusterIP
-  containerPort: 9998
+  containerPort: 6701
   routeHost: dev.inquiry.ckmro.com
 configMap:
 resources:
