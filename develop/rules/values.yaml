@@ -1,0 +1,19 @@
+namespace: dev
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/incubator/rules:latest
+  pullPolicy: Always
+service:
+  enabled: true
+  name: rules
+  type: ClusterIP
+  containerPort: 6801
+  routeHost: dev.rules.ckmro.com
+configMap:
+resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi
