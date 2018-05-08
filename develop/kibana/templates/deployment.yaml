@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
@@ -39,14 +39,6 @@ spec:
         - containerPort: {{ .Values.service.internalPort }}
           name: {{ template "kibana.name" . }}
           protocol: TCP
-        # livenessProbe:
-        #   httpGet:
-        #     path: /ping
-        #     port: {{ .Values.service.internalPort }}
-        # readinessProbe:
-        #   httpGet:
-        #     path: /ping
-        #     port: {{ .Values.service.internalPort }}
         resources:
 {{ toYaml .Values.resources | indent 10 }}
     {{- if .Values.image.pullSecrets }}
