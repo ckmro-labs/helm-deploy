@@ -1,14 +1,14 @@
 namespace: dev
 image:
-  repository: "docker.elastic.co/kibana/kibana-oss"
-  tag: "6.0.0"
+  repository: "docker.elastic.co/kibana/kibana"
+  tag: "5.4.3"
   pullPolicy: "IfNotPresent"
 
 commandline:
   args:
 
 env:
-  ELASTICSEARCH_URL: http://192.168.0.130:9200,http://192.168.0.131:9200
+  ELASTICSEARCH_URL: http://192.168.0.131:9200
   SERVER_PORT: 5601
 
 service:
@@ -17,8 +17,7 @@ service:
   annotations:
 ingress:
   enabled: true
-  hosts:
-    - dev.kibana.ckmro.com
+  hosts: dev.kibana.ckmro.com
 resources: {}
 tolerations: []
 nodeSelector: {}

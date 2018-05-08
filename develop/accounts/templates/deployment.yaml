@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: "{{ .Chart.Name }}"
+  namespace: {{ .Values.namespace }}
+  labels:
+    k8s-app: {{ .Chart.Name }}
+    app: {{ .Chart.Name }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+    release: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "appname" . }}
+        release: {{ .Release.Name }}
+        k8s-app: {{ .Chart.Name }}
+    spec:
+      imagePullSecrets:
+{{ toYaml .Values.image.secrets | indent 10 }}
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - name: "{{ .Values.service.name }}"
+          containerPort: {{ .Values.service.containerPort }}
+        resources:
+{{ toYaml .Values.resources | indent 12 }}

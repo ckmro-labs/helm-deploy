@@ -1,0 +1,19 @@
+namespace: dev
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/incubator/accounts:latest
+  pullPolicy: Always
+service:
+  enabled: true
+  name: accounts
+  type: ClusterIP
+  containerPort: 9997
+  routeHost: dev.accounts.ckmro.com
+configMap:
+resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi
