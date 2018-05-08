@@ -11,4 +11,4 @@ spec:
       - path:
         backend:
           serviceName: "{{ .Values.service.name }}"
-          servicePort: 80
+          servicePort: {{ .Values.service.containerPort }}
