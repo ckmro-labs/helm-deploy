@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   auth:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.074369+08:00
+    created: 2018-05-08T11:11:51.039804+08:00
     description: Auth Microservice Application Helm Chart
     digest: 207061c0d599a2b12708486836455e0dff824d4bf4226992f330c2d7c0f4a13f
     name: auth
@@ -11,7 +11,7 @@ entries:
     version: 2.0.0
   basic:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.074551+08:00
+    created: 2018-05-08T11:11:51.040004+08:00
     description: Basic Microservice Application Helm Chart
     digest: 51d57765ab003a24f1d620c0905d86b41a3764b20bb485f68618e523331b35c4
     name: basic
@@ -20,7 +20,7 @@ entries:
     version: 2.0.0
   commons:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.074835+08:00
+    created: 2018-05-08T11:11:51.040201+08:00
     description: Common Microservice Application Helm Chart
     digest: ef8fd00c74d7b69b801cd93899b4421601b0ebff1d445e6cc24d4f5b43a614cd
     name: commons
@@ -29,7 +29,7 @@ entries:
     version: 2.0.0
   gateway:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.075093+08:00
+    created: 2018-05-08T11:11:51.040447+08:00
     description: Gateway Microservice Application Helm Chart
     digest: 443b207e6eab5a01f29989d226ccfafd701dea67a7d800170ce13b8c3d5f74cb
     name: gateway
@@ -38,7 +38,7 @@ entries:
     version: 2.0.0
   inquiry:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.075307+08:00
+    created: 2018-05-08T11:11:51.040646+08:00
     description: Inquiry Microservice Application Helm Chart
     digest: 4b42bc7b6d8cb77b26c1d55a46a869fcb90163e4ab6279d0c73ad0513097d431
     name: inquiry
@@ -48,9 +48,9 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 6.0.0
-    created: 2018-05-08T11:10:26.075637+08:00
+    created: 2018-05-08T11:11:51.04102+08:00
     description: Kibana is an open source data visualization plugin for Elasticsearch
-    digest: 456fd27a8d6fa6cf4b1d7f035ed846e1bc04516a3415651174ba54ed23f8a20a
+    digest: b196f8577fe05c8c5f245bb81969658c39a2429a1bcd53e4ea30c4e0dc60a744
     engine: gotpl
     home: https://www.elastic.co/products/kibana
     icon: https://raw.githubusercontent.com/elastic/kibana/master/src/ui/public/icons/kibana-color.svg
@@ -68,7 +68,7 @@ entries:
     version: 0.4.0
   member:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.075843+08:00
+    created: 2018-05-08T11:11:51.041266+08:00
     description: Member Microservice Application Helm Chart
     digest: 2f89a2ca03680bceb79d4e7a6cd7dd6068bd6fe24bab2d80713460b89cd590a7
     name: member
@@ -77,7 +77,7 @@ entries:
     version: 2.0.0
   rules:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.076061+08:00
+    created: 2018-05-08T11:11:51.041474+08:00
     description: Rules Microservice Application Helm Chart
     digest: 5e70903a1234371a2c3512878aa5539573de0d4d017b6d838185348fe6fcc1d3
     name: rules
@@ -86,11 +86,11 @@ entries:
     version: 2.0.0
   web:
   - apiVersion: v1
-    created: 2018-05-08T11:10:26.076245+08:00
+    created: 2018-05-08T11:11:51.041747+08:00
     description: Website Microservice Application Helm Chart
     digest: d3f1d699eb39034fe9e01c8c3d654693eb411b5c76deaa29a4fe67810b25683e
     name: web
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/web-2.0.0.tgz
     version: 2.0.0
-generated: 2018-05-08T11:10:26.073819+08:00
+generated: 2018-05-08T11:11:51.039399+08:00

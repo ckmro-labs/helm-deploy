@@ -10,18 +10,12 @@ metadata:
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
   name: {{ template "kibana.fullname" . }}
-  annotations:
-    {{- range $key, $value := .Values.ingress.annotations }}
-      {{ $key }}: {{ $value | quote }}
-    {{- end }}
 spec:
   rules:
-    {{- range $host := .Values.ingress.hosts }}
-    - host: {{ $host }}
+    - host: {{ .Values.ingress.hosts }}
       http:
         paths:
           - path: /
             backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
-    {{- end -}}
