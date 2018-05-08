@@ -1,21 +1,14 @@
-{{- if .Values.ingress.enabled -}}
-{{- $serviceName := include "kibana.fullname" . -}}
-{{- $servicePort := .Values.service.internalPort -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  labels:
-    app: {{ template "kibana.name" . }}
-    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
-    heritage: {{ .Release.Service }}
-    release: {{ .Release.Name }}
-  name: {{ template "kibana.fullname" . }}
+  name: "traefik-{{ .Chart.Name }}-route"
+  namespace: {{ .Values.namespace }}
 spec:
   rules:
-    - host: {{ .Values.ingress.hosts }}
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: {{ $serviceName }}
-              servicePort: {{ $servicePort }}
+  - host: {{ .Values.ingress.hosts }}
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: "{{ template "kibana.name" . }}"
+          servicePort: {{ .Values.service.internalPort }}
