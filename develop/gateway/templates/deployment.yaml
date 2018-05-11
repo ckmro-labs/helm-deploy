@@ -23,16 +23,9 @@ spec:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        volumeMounts:
-        - name: gateway-cfg-volume
-          mountPath: /etc
-      volumes:
-      - name: gateway-cfg-volume
-        configMap:
-          name: gateway-cfg
-          items:
-          - key: application.properties
-            path: application.properties
+        env:
+        - name: "spring_profiles_active"
+          value: "{{ .Values.image.profile }}"
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.containerPort }}

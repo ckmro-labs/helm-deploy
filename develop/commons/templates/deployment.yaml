@@ -23,6 +23,9 @@ spec:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: "spring_profiles_active"
+          value: "{{ .Values.image.profile }}"
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.containerPort }}
