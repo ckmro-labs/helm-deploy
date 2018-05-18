@@ -3,6 +3,7 @@ replicaCount: 1
 image:
   repository: 192.168.0.132:1443/incubator/accounts:latest
   pullPolicy: Always
+  profile: dev
 service:
   enabled: true
   name: accounts
