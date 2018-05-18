@@ -9,4 +9,4 @@ spec:
   ports:
   - name: http
     targetPort: {{ .Values.service.containerPort }}
-    port: {{ .Values.service.containerPort }}
+    port: 80
