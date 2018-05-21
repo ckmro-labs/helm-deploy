@@ -11,4 +11,4 @@ spec:
       - path:
         backend:
           serviceName: "{{ template "kibana.name" . }}"
-          servicePort: {{ .Values.service.internalPort }}
+          servicePort: http

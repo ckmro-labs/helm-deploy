@@ -15,9 +15,9 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.internalPort }}
-      targetPort: {{ .Values.service.internalPort }}
-      protocol: TCP
+  - name: http
+    targetPort: {{ .Values.service.internalPort }}
+    port: 80
   selector:
     app: {{ template "kibana.name" . }}
     release: {{ .Release.Name }}

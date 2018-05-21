@@ -1,6 +1,6 @@
 namespace: dev
 image:
-  repository: "docker.elastic.co/kibana/kibana"
+  repository: "kibana"
   tag: "5.4.3"
   pullPolicy: "IfNotPresent"
 
