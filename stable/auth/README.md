@@ -1,7 +1,7 @@
 
 # usage
 
-* helm repo add ckmro_develop https://ckmro-labs.github.io/helm-deploy/ckmro/develop
-* helm install --name auth-develop -f values.yaml ckmro_develop/auth
-* helm upgrade auth-develop -f values.yaml ./
+* helm repo add ckmro_stable https://ckmro-labs.github.io/helm-deploy/ckmro/stable
+* helm install --name auth-stable -f values.yaml ckmro_develop/stable
+* helm upgrade auth-stable -f values.yaml ./
 *

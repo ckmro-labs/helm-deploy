@@ -1,7 +1,6 @@
-namespace: dev
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/stable/auth:latest
+  repository: registry.ckmro.com:1443/stable/auth:2.0.0
   pullPolicy: Always
 service:
   enabled: true
