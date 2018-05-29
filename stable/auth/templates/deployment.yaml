@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: "{{ .Chart.Name }}"
-  namespace: {{ .Values.namespace }}
   labels:
     k8s-app: {{ .Chart.Name }}
     app: {{ .Chart.Name }}
@@ -17,7 +16,6 @@ spec:
         release: {{ .Release.Name }}
         k8s-app: {{ .Chart.Name }}
     spec:
-      serviceAccountName: production-controller
       imagePullSecrets:
 {{ toYaml .Values.image.secrets | indent 10 }}
       containers:
