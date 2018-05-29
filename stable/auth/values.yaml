@@ -1,3 +1,4 @@
+namespace: production
 replicaCount: 1
 image:
   repository: registry.ckmro.com:1443/stable/auth:2.0.0

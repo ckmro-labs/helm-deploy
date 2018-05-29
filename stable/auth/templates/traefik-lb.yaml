@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: "traefik-{{ .Chart.Name }}-route"
+  namespace: {{ .Values.namespace }}
 spec:
   rules:
   - host: {{ .Values.service.routeHost }}
