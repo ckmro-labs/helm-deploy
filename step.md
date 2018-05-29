@@ -16,4 +16,5 @@
 
 ---------------CI(package release jar and app docker image) & deploy
 8、git checkout -b release.v2.0.0_1 //第一个2.0.0release版本，注意名称格式[relase.v{大版号}_{集成小号}]
-9、编辑 helm chart meta..(images/version/etc.)
+9、确定应用内application-prod.properties配置正确。
+10、编辑 helm chart meta..(images/version/etc.)
