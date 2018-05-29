@@ -7,7 +7,7 @@ service:
   name: auth-stable
   type: ClusterIP
   containerPort: 9998
-  routeHost: stable.auth.ckmro.com
+  routeHost: auth.ckmro.com
 configMap:
 resources:
 #  limits:

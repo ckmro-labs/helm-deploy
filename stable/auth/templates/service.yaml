@@ -7,5 +7,5 @@ spec:
     k8s-app: "{{ .Chart.Name }}"
   ports:
   - name: http
-    targetPort: 9998
+    targetPort: "{{ .Values.service.containerPort}}"
     port: 80
