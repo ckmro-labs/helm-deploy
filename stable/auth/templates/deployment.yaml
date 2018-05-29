@@ -17,8 +17,8 @@ spec:
         k8s-app: {{ .Chart.Name }}
     spec:
       imagePullSecrets:
-{{ toYaml .Values.image.secrets | indent 10 }}
-      containers:
+      - name: regsecret
+      containers: "{{ .Values.image.secret }}"
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
