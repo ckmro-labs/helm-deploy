@@ -16,14 +16,14 @@ spec:
         release: {{ .Release.Name }}
         k8s-app: {{ .Chart.Name }}
     spec:
-      {{- if .Values.image.secrets }}
-      imagePullSecrets:
-        - name: {{ .Values.image.secrets }}
-      {{- end }}
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
+        {{- if .Values.image.secrets }}
+        imagePullSecrets:
+          - name: {{ .Values.image.secrets }}
+        {{- end }}
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.containerPort }}
