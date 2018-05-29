@@ -19,7 +19,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host: traefik-ui.k8s
+  - host: traefik.ckmro.com
     http:
       paths:
       - path: /
