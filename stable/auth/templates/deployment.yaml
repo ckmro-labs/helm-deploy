@@ -17,7 +17,7 @@ spec:
         release: {{ .Release.Name }}
         k8s-app: {{ .Chart.Name }}
     spec:
-      serviceAccountName: default
+      serviceAccountName: production-controller
       imagePullSecrets:
 {{ toYaml .Values.image.secrets | indent 10 }}
       containers:
