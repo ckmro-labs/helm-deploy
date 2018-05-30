@@ -8,7 +8,7 @@ service:
   name: member-stable
   type: ClusterIP
   containerPort: 6601
-  routeHost: stable.member.ckmro.com
+  routeHost: member.ckmro.com
 configMap:
 resources:
 #  limits:
