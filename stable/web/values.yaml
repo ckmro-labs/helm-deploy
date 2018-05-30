@@ -1,14 +1,14 @@
-namespace: dev
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/stable/web:latest
+  repository: 192.168.0.132:1443/library/web:2.0.0
   pullPolicy: Always
+  secrets: harborsecret
 service:
   enabled: true
   name: web-stable
   type: ClusterIP
   containerPort: 80
-  routeHost: stable.www.ckmro.com
+  routeHost: www.ckmro.com
 configMap:
 resources:
 #  limits:
