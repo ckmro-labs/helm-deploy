@@ -1,14 +1,14 @@
-namespace: dev
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/stable/inquiry:latest
+  repository: 192.168.0.132:1443/library/inquiry:2.0.0
   pullPolicy: Always
+  secrets: harborsecret
 service:
   enabled: true
   name: inquiry-stable
   type: ClusterIP
-  containerPort: 9998
-  routeHost: stable.inquiry.ckmro.com
+  containerPort: 6701
+  routeHost: inquiry.ckmro.com
 configMap:
 resources:
 #  limits:
