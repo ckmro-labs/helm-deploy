@@ -1,0 +1,19 @@
+replicaCount: 1
+image:
+  repository: registry.ckmro.com:1443/library/rules:2.0.0
+  pullPolicy: Always
+  secrets: harborsecret
+service:
+  enabled: true
+  name: rules-stable
+  type: ClusterIP
+  containerPort: 6801
+  routeHost: rules.ckmro.com
+configMap:
+resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi
