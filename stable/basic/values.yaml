@@ -1,14 +1,14 @@
-namespace: dev
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/stable/basic:latest
+  repository: registry.ckmro.com:1443/library/basic:2.0.0
   pullPolicy: Always
+  secrets: harborsecret
 service:
   enabled: true
   name: basic-stable
   type: ClusterIP
-  containerPort: 8080
-  routeHost: stable.basic.ckmro.com
+  containerPort: 6901
+  routeHost: basic.ckmro.com
 configMap:
 resources:
 #  limits:
