@@ -8,5 +8,5 @@ spec:
     k8s-app: "{{ .Chart.Name }}-incubator"
   ports:
   - name: http
-    targetPort: 9998
+    targetPort: 6601
     port: 80
