@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/library/inquiry:2.0.0
+  repository: registry.ckmro.com:1443/library/inquiry:2.0.0
   pullPolicy: Always
   secrets: harborsecret
 service:
