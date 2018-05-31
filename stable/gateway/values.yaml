@@ -3,14 +3,15 @@ image:
   repository: registry.ckmro.com:1443/library/gateway:2.0.0
   pullPolicy: Always
   secrets: harborsecret
+  profile: prod
 service:
   enabled: true
   name: gateway-stable
   type: ClusterIP
   containerPort: 7701
   routeHost: gateway.ckmro.com
-configMap:
-resources:
+# configMap:
+# resources:
 #  limits:
 #    cpu: 100m
 #    memory: 128Mi
