@@ -1,66 +1,84 @@
 apiVersion: v1
 entries:
+  accounts:
+  - apiVersion: v1
+    created: 2018-06-01T15:06:01.219347919+08:00
+    description: Accounts Microservice Application Helm Chart
+    digest: f85bdb3fe472f2f4d0de74b0e725d22a39f934912a8d91c1e86679eeaa42cb69
+    name: accounts
+    urls:
+    - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/accounts-2.0.0.tgz
+    version: 2.0.0
   auth:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.267752+08:00
+    created: 2018-06-01T15:06:01.219500399+08:00
     description: Auth Microservice Application Helm Chart
-    digest: a01538ad3a698417c2dab6c94b85162d169656e0d6ec59246c627a2b11ff73ec
+    digest: cfd04b36beff669df82663abd6af53d3e49b4b60ff6a934867a55f9a9692afbe
     name: auth
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/auth-2.0.0.tgz
     version: 2.0.0
   basic:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.267919+08:00
+    created: 2018-06-01T15:06:01.220722328+08:00
     description: Basic Microservice Application Helm Chart
-    digest: 453a878570e146a45c8b76096aff989ac8272f759d7c52b4bd42aee92d4cf45e
+    digest: 18efb90ac55d879f0e71d4b4851d443f3f9db5b152b6952b7de0277a5948b69c
     name: basic
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/basic-2.0.0.tgz
     version: 2.0.0
   common:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.268114+08:00
+    created: 2018-06-01T15:06:01.220861432+08:00
     description: Common Microservice Application Helm Chart
-    digest: 4ff03b46f8ab100f1d225719477cdfb45f6bb7e11c81c36d89f343d3d84fb596
+    digest: 2c871105b39a38c63889ec39f62d124df3970c32e9e6bbe092b393fbdf6413c1
     name: common
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/common-2.0.0.tgz
     version: 2.0.0
   gateway:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.268304+08:00
+    created: 2018-06-01T15:06:01.220999498+08:00
     description: Gateway Microservice Application Helm Chart
-    digest: 3e4e7b9174fda536559fb8609b427798498617f29f1facf72e62587bf37d77f1
+    digest: 65f7341b543cec5ece9f4ef223475c4d8510870dfc0eb778b8778527ee8057ce
     name: gateway
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/gateway-2.0.0.tgz
     version: 2.0.0
   inquiry:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.268481+08:00
+    created: 2018-06-01T15:06:01.221139692+08:00
     description: Inquiry Microservice Application Helm Chart
-    digest: 163cc10be4e136343f31c0833c0a9540feab7f4354c9e5fb88b110935bdc1eed
+    digest: 376d3cbfaf3b54c8d115013e51714486febb167d109bafdc58c29332ef982e50
     name: inquiry
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/inquiry-2.0.0.tgz
     version: 2.0.0
   member:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.268678+08:00
+    created: 2018-06-01T15:06:01.221276761+08:00
     description: Member Microservice Application Helm Chart
-    digest: eab6d1f7d477a210b58579c46731563936f2191d3a0c5379be6131b34bfdf9e0
+    digest: a2be6b8c197f600eaffa47c03c4304cb990ecf44bbcc58ddd8337f89eb268eb4
     name: member
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/member-2.0.0.tgz
     version: 2.0.0
+  rules:
+  - apiVersion: v1
+    created: 2018-06-01T15:06:01.221415302+08:00
+    description: Rules Microservice Application Helm Chart
+    digest: ebc300c4ce455e67d757fd3cc2c4a87f0bfea8e75bb5750df755b7d54f397e34
+    name: rules
+    urls:
+    - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/rules-2.0.0.tgz
+    version: 2.0.0
   web:
   - apiVersion: v1
-    created: 2018-05-29T16:24:47.268871+08:00
+    created: 2018-06-01T15:06:01.221556325+08:00
     description: Website Microservice Application Helm Chart
-    digest: 33334b72a0370c0c62146fa399829020061f1f5ca21838cd1d11b877c6607b4e
+    digest: a4f3c613db140cb396faaf85a971e6b04b027124a79066a655cc2a62f08adf9b
     name: web
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/stable/web-2.0.0.tgz
     version: 2.0.0
-generated: 2018-05-29T16:24:47.26735+08:00
+generated: 2018-06-01T15:06:01.21905694+08:00
