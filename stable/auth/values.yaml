@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: auth-stable
+  name: auth
   type: ClusterIP
   containerPort: 9998
   routeHost: auth.ckmro.com
