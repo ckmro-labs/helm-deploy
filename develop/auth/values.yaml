@@ -1,7 +1,7 @@
 namespace: dev
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/incubator/auth:latest
+  repository: 192.168.0.132:1443/incubator/auth:c46e74282ee71f84f5f15d8a2b3a2049071f878d
   pullPolicy: Always
   profile: dev
 service:

@@ -2,7 +2,11 @@ apiVersion: v1
 entries:
   accounts:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.995889+08:00
+=======
+    created: 2018-06-01T15:06:01.284829487+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Basic Microservice Application Helm Chart
     digest: b9aa928b305f23db590d0a7aae1ea08784704519d848686c232699c49f39fd60
     name: accounts
@@ -12,7 +16,11 @@ entries:
   activemq:
   - apiVersion: v1
     appVersion: 5.14.5
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.996136+08:00
+=======
+    created: 2018-06-01T15:06:01.285053433+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: A Helm chart for Kubernetes
     digest: d9790392ba1a7ff8b0fd7690a24f55aff27efbb15415417acf950f921be91ab7
     name: activemq
@@ -21,7 +29,11 @@ entries:
     version: "0.103"
   auth:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.996323+08:00
+=======
+    created: 2018-06-01T15:06:01.285214323+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Auth Microservice Application Helm Chart
     digest: f5d33512aaf1cd97e050513409da98063135bd68be5f1e2eca6624a9efe93e9e
     name: auth
@@ -30,7 +42,11 @@ entries:
     version: 2.0.0
   basic:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.996507+08:00
+=======
+    created: 2018-06-01T15:06:01.285351738+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Basic Microservice Application Helm Chart
     digest: cd06e899730d66d29cca9adf378708d2d2e594f053456258d5e65d22ee964edf
     name: basic
@@ -39,7 +55,11 @@ entries:
     version: 2.0.0
   commons:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.996927+08:00
+=======
+    created: 2018-06-01T15:06:01.285507768+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Common Microservice Application Helm Chart
     digest: 2bf21ca56e02a2c7f1bbbb4760551a24a9e419f16e09654b6626a0514b33e568
     name: commons
@@ -48,7 +68,11 @@ entries:
     version: 2.0.0
   gateway:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.997197+08:00
+=======
+    created: 2018-06-01T15:06:01.285644238+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Gateway Microservice Application Helm Chart
     digest: 9ca5088d21c68d9505938094c3e6f3de1a8bdf4dbd1d658aaff87e903c4f1fd5
     name: gateway
@@ -57,7 +81,11 @@ entries:
     version: 2.0.0
   inquiry:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.997434+08:00
+=======
+    created: 2018-06-01T15:06:01.285786275+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Inquiry Microservice Application Helm Chart
     digest: 83214af3357ab4587a994af4b490acfc1baec7854d300f81eff8390679bbae08
     name: inquiry
@@ -67,7 +95,11 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 2.3.4
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.997778+08:00
+=======
+    created: 2018-06-01T15:06:01.286037848+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Kibana is an open source data visualization plugin for Elasticsearch
     digest: 5403f37a93290428af50d3d2fb8a4d3b0436f7a225a734f9dbf91d4d3b4cad8c
     engine: gotpl
@@ -87,7 +119,11 @@ entries:
     version: 0.4.0
   member:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.99797+08:00
+=======
+    created: 2018-06-01T15:06:01.286193803+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Member Microservice Application Helm Chart
     digest: 002074b45137cb8fe0e4c9b0732213a1f23f3d9bccc86e78c81b820b30d1a954
     name: member
@@ -96,7 +132,11 @@ entries:
     version: 2.0.0
   requirements:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.998161+08:00
+=======
+    created: 2018-06-01T15:06:01.286340389+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Requirements Microservice Application Helm Chart
     digest: 59c04082fa30a5d33318dcda176cf80e473aadf94e493bfed525c58ed5984d1f
     name: requirements
@@ -105,7 +145,11 @@ entries:
     version: 2.0.0
   rules:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.998361+08:00
+=======
+    created: 2018-06-01T15:06:01.286496461+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Rules Microservice Application Helm Chart
     digest: 258e46808b24425d23eb8e68696a3418cdabc26656f28333f14dbc9a3e77c331
     name: rules
@@ -114,11 +158,19 @@ entries:
     version: 2.0.0
   web:
   - apiVersion: v1
+<<<<<<< HEAD
     created: 2018-06-04T10:11:17.998547+08:00
+=======
+    created: 2018-06-01T15:06:01.286631379+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607
     description: Website Microservice Application Helm Chart
     digest: 370e2458cc4125f2fd1f807ad0eb6573fdbd7e582e1869a6d9136a80ab9a382c
     name: web
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/web-2.0.0.tgz
     version: 2.0.0
+<<<<<<< HEAD
 generated: 2018-06-04T10:11:17.995495+08:00
+=======
+generated: 2018-06-01T15:06:01.284531998+08:00
+>>>>>>> 90fab6117ecbba9db4a7fb59744dfdfd59c87607

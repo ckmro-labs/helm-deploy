@@ -9,8 +9,8 @@ service:
   type: ClusterIP
   containerPort: 80
   routeHost: www.ckmro.com
-configMap:
-resources:
+# configMap:
+# resources:
 #  limits:
 #    cpu: 100m
 #    memory: 128Mi
