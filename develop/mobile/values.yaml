@@ -1,16 +1,17 @@
+namespace: dev
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/library/web:2.0.0
+  repository: 192.168.0.132:1443/incubator/mobile:latest
   pullPolicy: Always
-  secrets: harborsecret
+  profile: dev
 service:
   enabled: true
-  name: web-stable
+  name: mobile
   type: ClusterIP
   containerPort: 80
-  routeHost: www.ckmro.com
-# configMap:
-# resources:
+  routeHost: dev.mobile.ckmro.com
+configMap:
+resources:
 #  limits:
 #    cpu: 100m
 #    memory: 128Mi

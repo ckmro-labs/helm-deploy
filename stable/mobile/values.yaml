@@ -1,14 +1,14 @@
 replicaCount: 1
 image:
-  repository: 192.168.0.132:1443/library/web:2.0.0
+  repository: 192.168.0.132:1443/library/mobile:2.0.0
   pullPolicy: Always
   secrets: harborsecret
 service:
   enabled: true
-  name: web-stable
+  name: mobile-stable
   type: ClusterIP
   containerPort: 80
-  routeHost: www.ckmro.com
+  routeHost: mobile.ckmro.com
 # configMap:
 # resources:
 #  limits:

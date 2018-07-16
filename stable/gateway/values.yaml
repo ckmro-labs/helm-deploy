@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: registry.ckmro.com:1443/library/gateway:2.0.0
+  repository: 192.168.0.132:1443/library/gateway:2.0.0
   pullPolicy: Always
   secrets: harborsecret
   profile: prod
