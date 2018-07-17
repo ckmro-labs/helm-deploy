@@ -1,0 +1,20 @@
+namespace: dev
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/incubator/designer:latest
+  pullPolicy: Always
+  profile: dev
+service:
+  enabled: true
+  name: designer
+  type: ClusterIP
+  containerPort: 80
+  routeHost: dev.designer.ckmro.com
+configMap:
+resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi
