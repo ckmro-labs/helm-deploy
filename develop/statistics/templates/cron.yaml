@@ -1,0 +1,16 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+ name: "{{ .Chart.Name }}"
+ namespace: {{ .Values.namespace }}
+spec:
+  schedule: "0 0 23 * * ?"  #job执行的周期，每晚11点
+ jobTemplate:
+   spec:
+    template:
+    spec:
+     containers:
+     - name: {{ .Chart.Name }}
+      image: "{{ .Values.image.repository }}"
+      command: ["sh", "bootstrap.sh"]
+      restartPolicy: OnFailure
