@@ -1,0 +1,20 @@
+namespace: dev
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/incubator/schedule:latest
+  pullPolicy: Always
+  profile: dev
+service:
+  enabled: true
+  name: schedule
+  type: ClusterIP
+  containerPort: 6501
+  routeHost: dev.schedule.ckmro.com
+configMap:
+resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi

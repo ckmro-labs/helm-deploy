@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: "{{ .Chart.Name }}"
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    k8s-app: "{{ .Chart.Name }}"
+  ports:
+  - name: http
+    targetPort: {{ .Values.service.containerPort }}
+    port: 80
