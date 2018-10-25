@@ -1,0 +1,20 @@
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/library/aggregations:2.0.0
+  pullPolicy: Always
+  secrets: harborsecret
+  profile: prod
+service:
+  enabled: true
+  name: aggregations-stable
+  type: ClusterIP
+  containerPort: 8082
+#   routeHost: aggregations.ckmro.com
+# configMap:
+# resources:
+#  limits:
+#    cpu: 100m
+#    memory: 128Mi
+#  requests:
+#    cpu: 100m
+#    memory: 128Mi
