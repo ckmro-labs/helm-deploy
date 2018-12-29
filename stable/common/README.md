@@ -12,3 +12,7 @@
 * helm upgrade common-develop -f values.yaml ./
 >>>>>>> parent of f6f846e... 修复stable关键字
 *
+
+
+
+helm upgrade common-stable ckmro_stable/common --set image.repository=registry.ckmro.com:1443/library/common:2.0.0
