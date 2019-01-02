@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: schedule-stable
+  name: schedule
   type: ClusterIP
   containerPort: 6501
 #   routeHost: schedule.ckmro.com

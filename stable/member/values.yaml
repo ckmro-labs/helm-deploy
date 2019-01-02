@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: member-stable
+  name: member
   type: ClusterIP
   containerPort: 6601
 #   routeHost: member.ckmro.com

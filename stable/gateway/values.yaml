@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: gateway-stable
+  name: gateway
   type: ClusterIP
   containerPort: 7701
   routeHost: gateway.ckmro.com

@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: inquiry-stable
+  name: inquiry
   type: ClusterIP
   containerPort: 6701
   # routeHost: inquiry.ckmro.com

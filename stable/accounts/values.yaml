@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: accounts-stable
+  name: accounts
   type: ClusterIP
   containerPort: 9997
   # routeHost: accounts.ckmro.com
