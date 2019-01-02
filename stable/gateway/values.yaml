@@ -9,7 +9,7 @@ service:
   name: gateway
   type: ClusterIP
   containerPort: 7701
-  routeHost: gateway.ckmro.com
+  routeHost: api.ckmro.com
 # configMap:
 # resources:
 #  limits:
