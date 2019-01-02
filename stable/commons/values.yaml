@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: common
+  name: commons
   type: ClusterIP
   containerPort: 7101
 #   routeHost: common.ckmro.com
