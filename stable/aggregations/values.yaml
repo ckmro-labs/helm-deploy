@@ -6,7 +6,7 @@ image:
   profile: prod
 service:
   enabled: true
-  name: aggregations-stable
+  name: aggregations
   type: ClusterIP
   containerPort: 8082
 #   routeHost: aggregations.ckmro.com
