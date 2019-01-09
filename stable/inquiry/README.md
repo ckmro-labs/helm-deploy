@@ -12,3 +12,5 @@
 * helm upgrade inquiry-develop -f values.yaml ./
 >>>>>>> parent of f6f846e... 修复stable关键字
 *
+
+helm upgrade inquiry-stable ckmro_stable/inquiry --set image.repository=registry.ckmro.com:1443/library/inquiry:release.v2.0.5

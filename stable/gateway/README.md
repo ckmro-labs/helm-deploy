@@ -11,4 +11,5 @@
 * helm install --name gateway-develop -f values.yaml ckmro_develop/gateway
 * helm upgrade gateway-develop -f values.yaml ./
 >>>>>>> parent of f6f846e... 修复stable关键字
-*
+
+* helm upgrade gateway-stable ckmro_stable/gateway --set image.repository=registry.ckmro.com:1443/library/gateway:release.v2.0.6
