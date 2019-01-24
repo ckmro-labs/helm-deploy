@@ -7,14 +7,13 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
-  type: NodePort
   ports:
   - port: {{ .Values.postgres.port }}
     targetPort: {{ .Values.postgres.targetPort }}
   selector:
     run: {{ .Values.postgres.name }}
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: {{ .Values.postgres.name }}
