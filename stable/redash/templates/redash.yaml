@@ -61,7 +61,7 @@ spec:
       volumes:
 {{ toYaml .Values.commonVolume.volumes | indent 6 }}
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: {{ .Values.redash.workerName }}
