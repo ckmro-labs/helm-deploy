@@ -1,0 +1,39 @@
+postgres:
+  name: postgres
+  port: 5432
+  targetPort: 5432
+  db: postgres
+  user: postgres
+  password: jPTuA5Ep7ru5hfNdf6eySHnrm9pmBj4HaAXtccsrfejKytSytrq9YRfmb7TbB8u7
+
+redis:
+  name: redis
+  port: 6379
+  targetPort: 6379
+
+redash:
+  name: redash
+  image: redash/redash:5.0.0.b4754
+  envFrom:
+  - configMapRef:
+      name: env
+  port: 80
+  workerName: redash-workers
+  route: dash.ckmro.cn
+  workerResources:
+    limits:
+      cpu: 20m
+    requests:
+      cpu: 10m
+
+commonVolume:
+  name: redash-data
+  mountPathForRedash: /opt/redash/postgres-data
+  mountPathForPostgres: /var/lib/postgresql/data
+  volumeMounts:
+    - name: redash-data
+      readOnly: false
+  volumes:
+    - name: redash-data
+      persistentVolumeClaim:
+        claimName: redash-data

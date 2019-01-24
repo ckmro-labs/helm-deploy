@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "traefik-{{ .Chart.Name }}-route"
+spec:
+  rules:
+  - host: {{ .Values.redash.route }}
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: "{{ .Values.redash.name }}"
+          servicePort: 80

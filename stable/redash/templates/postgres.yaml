@@ -1,0 +1,73 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.postgres.name }}
+  labels:
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: NodePort
+  ports:
+  - port: {{ .Values.postgres.port }}
+    targetPort: {{ .Values.postgres.targetPort }}
+  selector:
+    run: {{ .Values.postgres.name }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.postgres.name }}
+  labels:
+    app: {{ .Values.postgres.name }}
+spec:
+  selector:
+    matchLabels:
+      run: {{ .Values.postgres.name }}
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: {{ .Values.postgres.name }}
+    spec:
+      containers:
+      - name: {{ .Values.postgres.name }}
+        image: postgres:9.5.6-alpine
+        resources:
+          limits:
+            cpu: 100m
+            memory: 0.5Gi
+          requests:
+            cpu: 50m
+            memory: 0.3Gi
+        env:
+        - name: POSTGRES_DB
+          value: {{ .Values.postgres.db }}
+        - name: POSTGRES_USER
+          value: {{ .Values.postgres.user }}
+        - name: POSTGRES_PASSWORD
+          value: {{ .Values.postgres.password }}
+        ports:
+        - containerPort: {{ .Values.postgres.port }}
+        readinessProbe:
+          exec:
+            command:
+              - pg_isready
+              - "-U"
+              - {{ .Values.postgres.user }}
+          initialDelaySeconds: 60
+          timeoutSeconds: 5
+        livenessProbe:
+          exec:
+            command:
+              - pg_isready
+              - "-U"
+              - {{ .Values.postgres.user }}
+          initialDelaySeconds: 60
+          timeoutSeconds: 5
+        volumeMounts:
+{{ toYaml .Values.commonVolume.volumeMounts | indent 8 }}
+          mountPath: {{ .Values.commonVolume.mountPathForPostgres }}
+          subPath: postgres
+      volumes:
+{{ toYaml .Values.commonVolume.volumes | indent 6 }}
