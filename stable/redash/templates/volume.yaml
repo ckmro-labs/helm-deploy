@@ -3,8 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: {{ .Values.commonVolume.name }}
 spec:
-  storageClassName: standard
-  accessModes: [ReadWriteOnce]
+  accessModes: [ReadWriteMany]
   resources:
     requests:
-      storage: 20Gi
+      storage: 2Gi

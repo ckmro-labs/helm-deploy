@@ -28,8 +28,8 @@ redash:
 
 commonVolume:
   name: redash-data
-  mountPathForRedash: /opt/redash/postgres-data
-  mountPathForPostgres: /var/lib/postgresql/data
+  mountPathForRedash: /mnt/gluster/pv0
+  mountPathForPostgres: /mnt/gluster/pv1
   volumeMounts:
     - name: redash-data
       readOnly: false
