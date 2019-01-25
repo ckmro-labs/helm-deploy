@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ .Values.commonVolume.name }}
+  name: redash-data 
 spec:
   accessModes: [ReadWriteMany]
   resources:
