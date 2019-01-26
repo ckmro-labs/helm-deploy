@@ -55,7 +55,7 @@ spec:
             name: env
         image: {{ .Values.redash.image }}
         ports:
-        - containerPort: {{ .Values.redash.port }}
+        - containerPort: {{ .Values.redash.targetPort }}
         volumeMounts:
 {{ toYaml .Values.commonVolume.volumeMounts | indent 8 }}
           mountPath: {{ .Values.commonVolume.mountPathForRedash }}
