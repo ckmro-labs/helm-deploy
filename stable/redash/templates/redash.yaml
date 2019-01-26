@@ -20,7 +20,6 @@ metadata:
   name: {{ .Values.redash.name }}
   labels:
     app: {{ .Values.redash.name }}
-    run: {{ .Values.redash.name }}
     k8s-app: {{ .Values.redash.name }}
 spec:
   selector:
@@ -30,7 +29,8 @@ spec:
   template:
     metadata:
       labels:
-        run: {{ .Values.redash.name }}
+        k8s-app: {{ .Values.redash.name }}
+        app: {{ .Values.redash.name }}
     spec:
       initContainers:
       - name: create-db
