@@ -18,6 +18,7 @@ redash:
   - configMapRef:
       name: env
   port: 80
+  targetPort: 5000
   workerName: redash-workers
   route: dash.ckmro.cn
   workerResources:
