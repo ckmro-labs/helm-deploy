@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: "traefik-{{ .Chart.Name }}-route"
+  name: traefik-{{ .Chart.Name }}-route
 spec:
   rules:
   - host: {{ .Values.redash.route }}
@@ -9,5 +9,5 @@ spec:
       paths:
       - path:
         backend:
-          serviceName: "{{ .Values.redash.name }}"
+          serviceName: {{ .Values.redash.name }}
           servicePort: 80

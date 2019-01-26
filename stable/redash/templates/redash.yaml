@@ -8,7 +8,8 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   selector:
-    k8s-app: "{{ .Values.redash.name }}"
+    k8s-app: {{ .Values.redash.name }}
+    run: {{ .Values.redash.name }}
   ports:
   - name: http
     targetPort: {{ .Values.redash.targetPort }}
@@ -20,11 +21,14 @@ metadata:
   name: {{ .Values.redash.name }}
   labels:
     app: {{ .Values.redash.name }}
-    k8s-app: "{{ .Values.redash.name }}"
+    run: {{ .Values.redash.name }}
+    k8s-app: {{ .Values.redash.name }}
 spec:
   selector:
     matchLabels:
       run: {{ .Values.redash.name }}
+      k8s-app: {{ .Values.redash.name }}
+      app: {{ .Values.redash.name }}
   replicas: 1
   template:
     metadata:
@@ -46,10 +50,10 @@ spec:
         resources:
           limits:
             cpu: 500m
-            memory: 2Gi
+            memory: 1Gi
           requests:
             cpu: 100m
-            memory: 1.5Gi
+            memory: 1Gi
         envFrom:
         - configMapRef:
             name: env
