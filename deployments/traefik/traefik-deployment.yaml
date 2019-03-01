@@ -39,4 +39,9 @@ spec:
         - --api
         - --web
         - --kubernetes
+        - --accesslog
+        - --accesslog.filepath=/var/log/traefik_access.log
+        - --traefiklog
+        - --traefiklog.filepath=/var/log/traefik.log
+        - --traefiklogsfile=traefik.log
         - --logLevel=INFO
