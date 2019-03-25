@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 2
 image:
   repository: registry.ckmro.com:1443/library/gateway:2.0.0
   pullPolicy: Always
