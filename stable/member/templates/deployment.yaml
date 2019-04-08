@@ -27,6 +27,8 @@ spec:
         env:
         - name: "spring_profiles_active"
           value: "{{ .Values.image.profile }}"
+        - name: JAVA_OPTS
+          value: "-Xms256m -Xmx512m -XX:+UseG1GC -XX:MaxGCPauseMillis=200"          
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.containerPort }}
