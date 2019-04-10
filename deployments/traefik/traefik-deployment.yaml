@@ -35,6 +35,9 @@ spec:
         - name: admin
           containerPort: 8080
           hostPort: 8580
+        - name: https
+          containerPort: 443
+          hostPort: 443
         args:
         - --api
         - --web
