@@ -7,7 +7,7 @@ service:
   enabled: true
   name: healthy
   type: ClusterIP
-  containerPort: 80
+  containerPort: 3000
   routeHost: healthy.ckmro.com
 # configMap:
 # resources:
