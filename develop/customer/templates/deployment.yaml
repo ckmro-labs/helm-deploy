@@ -23,9 +23,9 @@ spec:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.image.repository }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-		volumeMounts:
-		- mountPath: /data
-		  name: images-volume
+		    volumeMounts:
+		    - mountPath: /data
+		      name: images-volume
         env:
         - name: "spring_profiles_active"
           value: "{{ .Values.image.profile }}"
@@ -36,7 +36,7 @@ spec:
           containerPort: {{ .Values.service.containerPort }}
         resources:
 {{ toYaml .Values.resources | indent 12 }}
-     volumes:
-	 - name: images-volume
-	   hostPath: /data/brick1/gv0
-	   type: Directory
+      volumes:
+	    - name: images-volume
+	      hostPath: /data/brick1/gv0
+	      type: Directory
