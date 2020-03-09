@@ -1,0 +1,14 @@
+namespace: dev
+replicaCount: 1
+image:
+  repository: 192.168.0.132:1443/incubator/customer:latest
+  pullPolicy: Always
+  profile: dev
+service:
+  enabled: true
+  name: customer
+  type: ClusterIP
+  containerPort: 6909
+  routeHost: dev.customer.ckmro.com
+configMap:
+resources:
