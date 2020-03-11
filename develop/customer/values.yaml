@@ -10,5 +10,7 @@ service:
   type: ClusterIP
   containerPort: 6909
   routeHost: dev.customer.ckmro.com
+volume:
+  path: /data/brick1/gv0
 configMap:
 resources:
