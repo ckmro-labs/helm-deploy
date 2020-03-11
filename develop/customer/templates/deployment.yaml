@@ -37,7 +37,6 @@ spec:
         resources:
 {{ toYaml .Values.resources | indent 12 }}
       volumes: 
-        - 
+        - name: images-volume
           hostPath: /data/brick1/gv0
-          name: images-volume
           type: Directory
