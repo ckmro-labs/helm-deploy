@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   accounts:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.303488+08:00"
+    created: "2020-03-11T15:50:55.471374+08:00"
     description: Basic Microservice Application Helm Chart
-    digest: 0eaaa25bb4ab470bc7e1c5e51f61694e4188b4eda8980545902a0c1761b116cc
+    digest: 46b218dfc205f0b1145fe5d19f82b49b75f6df250ed1668e49ac802ded398632
     name: accounts
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/accounts-2.0.0.tgz
@@ -12,81 +12,81 @@ entries:
   activemq:
   - apiVersion: v1
     appVersion: 5.14.5
-    created: "2020-03-11T14:27:22.303883+08:00"
+    created: "2020-03-11T15:50:55.472124+08:00"
     description: A Helm chart for Kubernetes
-    digest: 175194f3cafbbd8ba16d524c1a25d5b1c58e853eb0a354b2f59b58bef9aa345a
+    digest: 504f7a27186e63f7918866ac6ec6eb5cc25c42e1ef55cacd832c13d694445bf6
     name: activemq
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/activemq-0.103.tgz
     version: "0.103"
   aggregations:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.304202+08:00"
+    created: "2020-03-11T15:50:55.472585+08:00"
     description: Aggregations Microservice Application Helm Chart
-    digest: 23b28fe55d8a7947aa3ea55024d1da5012d55465a0f2f9c1a54f83a51c4a0392
+    digest: 0b2156d774b7b6298d1965d04f0cfe4cd47b6b1c89534517637598044f9c58e8
     name: aggregations
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/aggregations-2.0.0.tgz
     version: 2.0.0
   auth:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.304607+08:00"
+    created: "2020-03-11T15:50:55.479547+08:00"
     description: Auth Microservice Application Helm Chart
-    digest: 4498a6e0f14a556062f5cb2cb4a8abb543c5e7031287c8bcc237982dc7b8ff90
+    digest: 62e56e6c41192da3c22cbd315821c55f14a0fd5564366a7f432bf303eb4fa688
     name: auth
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/auth-2.0.0.tgz
     version: 2.0.0
   basic:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.304919+08:00"
+    created: "2020-03-11T15:50:55.480119+08:00"
     description: Basic Microservice Application Helm Chart
-    digest: 8d333b59b3e6b7ac86659501767aa3fe782e21e617d02438a6aee0009725f2c5
+    digest: f46ba577890937fb779ae21cd8c090e8787ed37bc35f824db8fea1e79e29f46c
     name: basic
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/basic-2.0.0.tgz
     version: 2.0.0
   commons:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.305272+08:00"
+    created: "2020-03-11T15:50:55.480447+08:00"
     description: Common Microservice Application Helm Chart
-    digest: 9cddf85c8df646a8bcbbbe26c9520a6533df0d2a3bc8fbe16e5e5bac93d55704
+    digest: d94bbac469081f75a68d8fd0a0bd96ea4c03aef41cfb61204460764180753caf
     name: commons
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/commons-2.0.0.tgz
     version: 2.0.0
   customer:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.305612+08:00"
+    created: "2020-03-11T15:50:55.480808+08:00"
     description: Basic Microservice Application Helm Chart
-    digest: 388443d5ffc232f73c09947a6e8dc1bfecedd2bf762fb77c87566d8dc97a869a
+    digest: caaa8f4aa779dd23a832c00e516d3b370542603ce32b4d980f545b7a1a1c358d
     name: customer
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/customer-2.0.0.tgz
     version: 2.0.0
   design:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.305961+08:00"
+    created: "2020-03-11T15:50:55.481165+08:00"
     description: Website Microservice Application Helm Chart
-    digest: aaf0c737f1952502dd83fae6404dd081ce3a369e3dd45bdfba29ba2c2d90cde7
+    digest: d9cd24282528810cf383c49e43f7d26ea424033640c4d5b783e3d588fb938f0b
     name: design
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/design-2.0.0.tgz
     version: 2.0.0
   gateway:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.30661+08:00"
+    created: "2020-03-11T15:50:55.481468+08:00"
     description: Gateway Microservice Application Helm Chart
-    digest: 0a4cabcf5fe994242bc4bd17122a4832ccc4877ea253d14a955df787aa2b633c
+    digest: 2dcb62a7183387a99843764c915ec650c88ee22d85b36c81f31f0bc5ea5f19cd
     name: gateway
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/gateway-2.0.0.tgz
     version: 2.0.0
   inquiry:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.308005+08:00"
+    created: "2020-03-11T15:50:55.481774+08:00"
     description: Inquiry Microservice Application Helm Chart
-    digest: df3a374b1e052791552f9fddaa6d34910a52fbc846a6ff73ae38860a4649a006
+    digest: cc0b50cd6dcf610c75a2de872755ce9e402654e6e097336a142303a799f6753b
     name: inquiry
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/inquiry-2.0.0.tgz
@@ -94,9 +94,9 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 2.3.4
-    created: "2020-03-11T14:27:22.308586+08:00"
+    created: "2020-03-11T15:50:55.482186+08:00"
     description: Kibana is an open source data visualization plugin for Elasticsearch
-    digest: c2be97c8353196764d04c66a6df969d1b566cb578ca974143f5785064d2898b9
+    digest: 93a1d766ad7bcf272b2fa0e0688f1cc7449dedd479f7f2c1b7865365ed56ed97
     home: https://www.elastic.co/products/kibana
     icon: https://raw.githubusercontent.com/elastic/kibana/master/src/ui/public/icons/kibana-color.svg
     keywords:
@@ -113,74 +113,74 @@ entries:
     version: 0.4.0
   member:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.308887+08:00"
+    created: "2020-03-11T15:50:55.482711+08:00"
     description: Member Microservice Application Helm Chart
-    digest: ef723cb56cb002c05ba1ff6f503927f708d0602b08065fddb77c164db3b6402f
+    digest: 1151d546fc6a0b4bf895670960dc602ce3b5fe4211eeb63bba291a9da54eb155
     name: member
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/member-2.0.0.tgz
     version: 2.0.0
   mobile:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.309162+08:00"
+    created: "2020-03-11T15:50:55.483103+08:00"
     description: Website Microservice Application Helm Chart
-    digest: c440ceaa9ecc39147fda19dec5bab7142948db96e797cf5801246a765dc1face
+    digest: 3fc5d69a1fdb7c67a4ebc85d0fdddf399c01431fdf807d84bf37ed5049656978
     name: mobile
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/mobile-2.0.0.tgz
     version: 2.0.0
   requirements:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.309535+08:00"
+    created: "2020-03-11T15:50:55.483383+08:00"
     description: Requirements Microservice Application Helm Chart
-    digest: 19dd8955f3813caafbd283453806f0e1f1621d8b886f1c0ca503f92b8286b740
+    digest: e2dc1303302131b350eb321d5bc35b8a0dc9978382ebb5864125358c53818a4e
     name: requirements
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/requirements-2.0.0.tgz
     version: 2.0.0
   rules:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.309836+08:00"
+    created: "2020-03-11T15:50:55.483668+08:00"
     description: Rules Microservice Application Helm Chart
-    digest: a089593c61117ce5a11641410145afe1d9f659aff1a073fc65d31c6d46fe61aa
+    digest: fc48cf2e73ff3e5ea46b766435767ca8835aa64f32e61281c0cb956d5d064afb
     name: rules
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/rules-2.0.0.tgz
     version: 2.0.0
   schedule:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.310126+08:00"
+    created: "2020-03-11T15:50:55.48397+08:00"
     description: Schedule Microservice Application Helm Chart
-    digest: 1982d13125482d2584e0aca25ba8bf5dd9380d8597ee503112b4ef0dec427e2f
+    digest: 394870b02729bfda6075edf3a9060f8c82d0ae77ab902d382f43bb99287e3b6d
     name: schedule
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/schedule-2.0.0.tgz
     version: 2.0.0
   statistics:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.310382+08:00"
+    created: "2020-03-11T15:50:55.484265+08:00"
     description: Aggregations Cron Application Helm Chart
-    digest: 95275b092929c05d47546295583f7f92d79ed90060c04bc8380bb4c014b95fad
+    digest: 1e413fe32f324c055bab9777fa7a7d1b32a4ffa2aa8d772be7b4c305caac57fb
     name: statistics
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/statistics-2.0.0.tgz
     version: 2.0.0
   tweb:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.310654+08:00"
+    created: "2020-03-11T15:50:55.484562+08:00"
     description: Website Microservice Application Helm Chart
-    digest: 37d993000ecae8b9c36f3d6a6b2139188020bcd2e9e389e14cf4ae02c9935b32
+    digest: e9adc86223d6e1d0d9949e7676b9509ff723d515f1b13dde07c9ad4689f6ada0
     name: tweb
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/tweb-2.0.0.tgz
     version: 2.0.0
   web:
   - apiVersion: v1
-    created: "2020-03-11T14:27:22.310928+08:00"
+    created: "2020-03-11T15:50:55.484848+08:00"
     description: Website Microservice Application Helm Chart
-    digest: 79e9513d1c1427ada99cbd4a3cb767dc51dbcaefc22ef04bfa85ade7a1538be6
+    digest: f2291e3fac507079a2465c48421551c8016f34a2a6fc9f567e3c7b62a417e73e
     name: web
     urls:
     - https://ckmro-labs.github.io/helm-deploy/ckmro/develop/web-2.0.0.tgz
     version: 2.0.0
-generated: "2020-03-11T14:27:22.302994+08:00"
+generated: "2020-03-11T15:50:55.470595+08:00"
