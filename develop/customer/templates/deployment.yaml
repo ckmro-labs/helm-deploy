@@ -38,5 +38,6 @@ spec:
 {{ toYaml .Values.resources | indent 12 }}
       volumes: 
         - name: images-volume
-          hostPath: "{{ .Values.volume.path }}"
-          type: Directory
+          hostPath: 
+            path: "{{ .Values.volume.path }}"
+            type: DirectoryOrCreate
