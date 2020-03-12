@@ -8,7 +8,7 @@ service:
   enabled: true
   name: customer
   type: ClusterIP
-  containerPort: 6909
+  containerPort: 7201
   routeHost: dev.customer.ckmro.com
 cbit:
   config: /etc/cbit/config-server.yml
