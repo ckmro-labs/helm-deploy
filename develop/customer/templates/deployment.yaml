@@ -31,6 +31,8 @@ spec:
           value: "{{ .Values.image.profile }}"
         - name: JAVA_OPTS
           value: "-Xms256m -Xmx512m -XX:+UseG1GC -XX:MaxGCPauseMillis=200"          
+        - name: CBIT_ENV_CFG
+          value: "{{ .Values.cbit.config }}"
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.containerPort }}

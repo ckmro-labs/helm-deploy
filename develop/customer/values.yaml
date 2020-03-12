@@ -10,6 +10,8 @@ service:
   type: ClusterIP
   containerPort: 6909
   routeHost: dev.customer.ckmro.com
+cbit:
+  config: /etc/cbit/config-server.yml
 volume:
   path: /data/brick1/gv0
 configMap:
