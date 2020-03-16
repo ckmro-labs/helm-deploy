@@ -12,6 +12,6 @@ service:
 cbit:
   config: /etc/cbit/config-server_prod.yml
 volume:
-  path: /mnt/gluster/pv0
+  path: /data/gfs
 configMap:
 resources:
