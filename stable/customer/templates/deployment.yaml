@@ -42,4 +42,4 @@ spec:
         - name: images-volume
           hostPath: 
             path: "{{ .Values.volume.path }}"
-            type: DirectoryOrCreate
+            type: Directory
